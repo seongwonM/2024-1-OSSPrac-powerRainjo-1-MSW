@@ -2,6 +2,5 @@ bin/
 include/
 pyvenv.cfg
 __pycache__/
-lib/
-pyvenv.cfg
+lib/python3.11/site-packages/*
 
