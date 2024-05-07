@@ -11,6 +11,8 @@ def result():
     if request.method =='POST':
        result=dict()
        result['Name']=request.form.get('name')
+       result['StudentNumber']=request.form.get('StudentNumber')
+       result['Major']=request.form.get('MajorInfo')
        return render_template('result.html',result=result)
 
 if __name__ =='__main__':
