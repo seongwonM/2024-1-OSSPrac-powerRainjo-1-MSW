@@ -12,6 +12,7 @@ def result():
        result=dict()
        result['Name']=request.form.get('name')
        result['StudentNumber']=request.form.get('StudentNumber')
+       result['Gender']=request.form.get('gender')
        result['Major']=request.form.get('MajorInfo')
        languages_list = request.form.getlist('languages')
        result['Languages'] = ', '.join(languages_list)
