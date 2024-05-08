@@ -13,6 +13,9 @@ def result():
        result['Name']=request.form.get('name')
        result['StudentNumber']=request.form.get('StudentNumber')
        result['Major']=request.form.get('MajorInfo')
+       languages_list = request.form.getlist('languages')
+       result['Languages'] = ', '.join(languages_list)
+
        return render_template('result.html',result=result)
 
 if __name__ =='__main__':
